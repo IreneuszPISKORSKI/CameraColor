@@ -14,6 +14,7 @@ function setup(){
   slider.position(700, 100); // position du slider dans la page
   slider.style('width', '250px'); // largeur du slider (css)
   capture = createCapture(VIDEO);
+  options = {video: {facingMode: {exact: "environment"}}};
   capture.size(640, 480);
   pixelDensity(1); // pour ne pas qu'il y ait de bug d'affichage
 }
