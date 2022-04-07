@@ -114,14 +114,14 @@ function mousePressed(){
 }
 
 function writeText(){
-  if(newColor) {
-  textSize(20);
-  text('Color ' + newColor, 50, h + 20);
-  text('Hue ' + newColorHue, 50, h + 50);
   
   text('Hue min ' + hueMin + ' (0 - 360)', 50, h + 140);
   text('Hue max ' + hueMax + ' (0 - 360)', 50, h + 200);
 
+  if(newColor) {
+  textSize(20);
+  text('Color ' + newColor, 50, h + 20);
+  text('Hue ' + newColorHue, 50, h + 50);
   text('Saturation ' + saturation(newColor), 50, h + 80);
   text('Brightness ' + brightness(newColor), 50, h + 110);
   }
